@@ -51,3 +51,31 @@ console.log('keys', keys);
 if ('name' in p) {
   console.log("Your name is: " + p.name);
 }
+
+
+
+/**
+ * Clone Object
+ */
+
+let person = {
+  name: "Pankaj Sharma",
+  age: 20,
+  email: "pankaj@abc.com"
+}
+
+let employee = {};
+
+// Clone Object.assign(to, from);
+
+Object.assign(employee, person);
+
+employee.id = 007;
+
+console.log(employee); 
+// { name: "Pankaj Sharma", age: 20, email: "pankaj@abc.com" }
+
+console.log(person);
+// { name: "Pankaj Sharma", age: 20, email: "pankaj@abc.com", id: 007 }
+
+
